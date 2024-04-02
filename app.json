@@ -1,0 +1,39 @@
+{
+  "id": "82f0b5c0-5561-4bfb-997a-bd48e761bf67",
+  "name": "ALReportCarnica",
+  "publisher": "Default Publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "a6c3fb60-2571-4f8f-ae7e-c37d9049cc54",
+      "publisher": "ACTIVE BUSINESS & TECHNOLOGY",
+      "name": "myFoodTech",
+      "version": "21.0.7.0"
+  }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "21.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "10.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
