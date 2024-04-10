@@ -61,6 +61,7 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <RepeatWith>Tablix1</RepeatWith>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -118,6 +119,7 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <RepeatWith>Tablix1</RepeatWith>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -175,6 +177,7 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <RepeatWith>Tablix1</RepeatWith>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -232,6 +235,7 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox6</rd:DefaultName>
+                          <RepeatWith>Tablix1</RepeatWith>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -289,6 +293,7 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox8</rd:DefaultName>
+                          <RepeatWith>Tablix1</RepeatWith>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -574,6 +579,7 @@
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox10</rd:DefaultName>
+                        <RepeatWith>Tablix1</RepeatWith>
                         <Style>
                           <Border>
                             <Style>Solid</Style>
@@ -634,6 +640,7 @@
                               </Paragraph>
                             </Paragraphs>
                             <rd:DefaultName>Textbox12</rd:DefaultName>
+                            <RepeatWith>Tablix1</RepeatWith>
                             <Style>
                               <Border>
                                 <Style>Solid</Style>
@@ -694,6 +701,7 @@
                                   </Paragraph>
                                 </Paragraphs>
                                 <rd:DefaultName>Textbox16</rd:DefaultName>
+                                <RepeatWith>Tablix1</RepeatWith>
                                 <Style>
                                   <Border>
                                     <Style>Solid</Style>
@@ -927,6 +935,8 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
+            <RepeatColumnHeaders>true</RepeatColumnHeaders>
+            <RepeatRowHeaders>true</RepeatRowHeaders>
             <DataSetName>DataSet_Result</DataSetName>
             <Filters>
               <Filter>
@@ -1021,8 +1031,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.97745in</Top>
-              <Left>6.39367in</Left>
+              <Top>0.69272in</Top>
+              <Left>6.62657in</Left>
               <Height>0.24306in</Height>
               <Width>1.36458in</Width>
               <ZIndex>1</ZIndex>
@@ -1056,8 +1066,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>1.27606in</Top>
-              <Left>6.39367in</Left>
+              <Top>0.99133in</Top>
+              <Left>6.62657in</Left>
               <Height>0.26042in</Height>
               <Width>1.36458in</Width>
               <ZIndex>2</ZIndex>
@@ -1093,7 +1103,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox4</rd:DefaultName>
-              <Top>0.77605in</Top>
+              <Top>0.49133in</Top>
               <Left>3.34159in</Left>
               <Height>0.44445in</Height>
               <Width>2.67709in</Width>
@@ -1112,7 +1122,7 @@
               <Source>Embedded</Source>
               <Value>z26N_2od_400x4002</Value>
               <Sizing>FitProportional</Sizing>
-              <Top>1.26217in</Top>
+              <Top>0.97745in</Top>
               <Left>4.0925in</Left>
               <Height>0.57639in</Height>
               <Width>1.1866in</Width>

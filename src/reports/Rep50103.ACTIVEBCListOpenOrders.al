@@ -74,22 +74,24 @@ report 50103 "ACTIVEBCListOpenOrders"
             }
             trigger OnPreDataItem()
             begin
-
-                if ((Format(StartDate) <> '') and (Format(FinalDate) <> '')) then begin
-                    DataItemName.SetRange("Document Date", StartDate, FinalDate);
-                end;
-                if ((Format(StartDate) = '') and (Format(FinalDate) = '')) then begin
-                    StartDate := Today;
-                    FinalDate := Today;
-                    DataItemName.SetRange("Document Date", DMY2Date(15, 11, 2023), Today);
-                end;
-                if ((Format(StartDate) <> '') and (Format(FinalDate) = '')) then begin
-                    FinalDate := Today;
-                    DataItemName.SetRange("Document Date", StartDate, Today);
-                end;
-                if ((Format(StartDate) = '') and (Format(FinalDate) <> '')) then begin
-                    DataItemName.SetRange("Document Date", DMY2Date(15, 11, 2023), FinalDate);
-                end;
+                if triggerError() then begin
+                    if ((Format(StartDate) <> '') and (Format(FinalDate) <> '')) then begin
+                        DataItemName.SetRange("Document Date", StartDate, FinalDate);
+                    end;
+                    if ((Format(StartDate) = '') and (Format(FinalDate) = '')) then begin
+                        DataItemName.SetRange("Document Date", Today);
+                    end;
+                    if ((Format(StartDate) <> '') and (Format(FinalDate) = '')) then begin
+                        FinalDate := Today;
+                        DataItemName.SetRange("Document Date", StartDate, Today);
+                    end;
+                    if ((Format(StartDate) = '') and (Format(FinalDate) <> '')) then begin
+                        //TODO: Cambiar las fechas
+                        DataItemName.SetRange("Document Date", DMY2Date(15, 11, 2023), FinalDate);
+                    end;
+                end
+                else
+                    Message('Campos de la fecha invalidos');
             end;
 
         }
@@ -154,6 +156,10 @@ report 50103 "ACTIVEBCListOpenOrders"
         end;
         EXIT(listoLocal);
     end;*/
-
+    [TryFunction]
+    local procedure triggerError()
+    begin
+        Error('Campos de la fecha invalidos');
+    end;
 
 }
