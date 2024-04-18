@@ -27,6 +27,7 @@ report 50101 ACTIVEBCCompleteShipment
             }
             column(FechaPublicacion; "Posting Date")
             {
+
             }
             column(SalesPerson; "Salesperson Code")
             {
