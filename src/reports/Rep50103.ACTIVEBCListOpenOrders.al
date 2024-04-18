@@ -87,7 +87,7 @@ report 50103 "ACTIVEBCListOpenOrders"
                     end;
                     if ((Format(StartDate) = '') and (Format(FinalDate) <> '')) then begin
                         //TODO: Cambiar las fechas
-                        DataItemName.SetRange("Document Date", DMY2Date(15, 11, 2023), FinalDate);
+                        DataItemName.SetRange("Document Date", DMY2Date(01, 01, 2000), FinalDate);
                     end;
                 end
                 else
