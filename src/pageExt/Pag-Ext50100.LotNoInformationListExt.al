@@ -2,10 +2,10 @@ pageextension 50100 "Lot No. Information Card Ext" extends "Lot No. Information 
 {
     layout
     {
-        modify(SubformDIB)
+        /*modify(SubformDIB)
         {
             Visible = visibilidadDIB;
-        }
+        }*/
         addlast(content)
         {
             part(TrazabPart; "Active FH Trazab.Lote CardPart")
